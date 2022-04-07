@@ -1,0 +1,23 @@
+import React from 'react'
+import { ActivityIndicator, Text, View, StyleSheet } from 'react-native';
+
+export const Loading = () => {
+    return (
+        <View style={styles.activityContainer}>
+            <ActivityIndicator
+                size={50}
+                color='grey'
+
+            />
+            <Text>Cargando...</Text>
+        </View>
+    )
+}
+
+export const styles = StyleSheet.create({
+    activityContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+});
